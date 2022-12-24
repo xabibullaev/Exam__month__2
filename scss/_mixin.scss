@@ -1,0 +1,77 @@
+@mixin pink__button {
+  padding: 15px 25px;
+  background: $primary__pink;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: #fbfcfe;
+  &:hover {
+    background: $secondary__pink;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: #fbfcfe;
+  }
+  &:disabled {
+    background: #ba4270;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+  }
+}
+@mixin light__button {
+  padding: 16px 32px;
+  border: 1px solid #fbfcfe;
+  border-radius: 24px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: #fbfcfe;
+  &:hover {
+    background: #ffffff;
+    border: 1px solid #fbfcfe;
+    border-radius: 24px;
+    color: #1b262f;
+  }
+  &:disabled {
+    border: 1px solid #fbfcfe;
+    border-radius: 24px;
+    opacity: 0.5;
+  }
+}
+@mixin dark__button {
+  border: 1px solid #36536b;
+  border-radius: 24px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: #36536b;
+  &:hover {
+    background: #36536b;
+    border: 1px solid #36536b;
+    border-radius: 24px;
+    color: #ffffff;
+  }
+  &:disabled {
+    border: 1px solid #36536b;
+    border-radius: 24px;
+    color: #36536b;
+    opacity: 0.5;
+  }
+}
