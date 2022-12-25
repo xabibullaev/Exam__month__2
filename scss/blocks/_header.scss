@@ -1,0 +1,88 @@
+.header {
+  margin-top: 45px;
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__list {
+    margin-left: 65px;
+    display: flex;
+    column-gap: 40px;
+  }
+  &__link {
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #36536b;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    &:hover {
+      color: #36536b;
+      opacity: 1;
+    }
+  }
+  &__button {
+    margin-left: 490px;
+    @include pink__button;
+  }
+  &__burger {
+    display: none;
+  }
+}
+
+// responsive__part //
+
+// tablet__part
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    &__container {
+      width: 689px;
+      margin: 0 auto;
+    }
+    &__button {
+      margin-left: 85px;
+      @include pink__button;
+    }
+    &__link {
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      color: #36536b;
+      mix-blend-mode: normal;
+      opacity: 0.7;
+    }
+    &__burger {
+      display: none;
+    }
+  }
+}
+// phone__part
+@media (min-width: 320px) and (max-width: 480px) {
+  .header {
+    &__container {
+      width: 328px;
+      margin: 0 auto;
+    }
+    &__list {
+      display: none;
+    }
+    &__button {
+      display: none;
+    }
+    &__burger {
+      margin-left: 164px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+    }
+    &__line {
+      width: 28px;
+      height: 3px;
+      background: #36536b;
+    }
+  }
+}

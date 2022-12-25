@@ -1,0 +1,148 @@
+.cooperate {
+  background: $secondary__mirageblue;
+  &__box {
+    display: flex;
+    column-gap: 130px;
+  }
+  &__content {
+    padding-top: 100px;
+    width: 445px;
+    padding-bottom: 100px;
+  }
+  &__title {
+    width: 445px;
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #fbfcfe;
+    margin-bottom: 24px;
+  }
+  &__text {
+    width: 445px;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #fbfcfe;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    margin-bottom: 32px;
+  }
+  &__link {
+    @include light__button;
+  }
+  &__logos {
+    margin-top: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    width: 536px;
+    height: 103px;
+  }
+}
+
+// responsive__part //
+
+// tablet__part
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cooperate {
+    margin-top: 100px;
+    &__container {
+      width: 689px;
+      margin: 0 auto;
+    }
+    &__box {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      row-gap: 64px;
+    }
+    &__logos {
+      margin-top: 88px;
+    }
+    &__content {
+      padding-top: 0;
+      padding-bottom: 88px;
+      text-align: center;
+    }
+    &__title {
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      text-align: center;
+      letter-spacing: -0.369231px;
+      color: #fbfcfe;
+    }
+    &__text {
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      text-align: center;
+      color: #fbfcfe;
+      mix-blend-mode: normal;
+      opacity: 0.7;
+    }
+  }
+}
+// phone__part
+@media (min-width: 320px) and (max-width: 480px) {
+  .cooperate {
+    margin-top: 80px;
+    &__container {
+      width: 328px;
+      margin: 0 auto;
+    }
+    &__box {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      row-gap: 54px;
+    }
+
+    &__logos {
+      width: 327px;
+      margin-top: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 40px;
+      row-gap: 40px;
+    }
+    &__content {
+      width: 327px;
+      padding-top: 54px;
+      padding-bottom: 88px;
+      text-align: center;
+    }
+    &__title {
+      width: 327px;
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 36px;
+      text-align: center;
+      letter-spacing: -0.246154px;
+      color: #fbfcfe;
+    }
+    &__text {
+      margin-right: 0;
+      width: 327px;
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      text-align: center;
+      color: #fbfcfe;
+      mix-blend-mode: normal;
+      opacity: 0.7;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.simple {
+  &__box {
+    display: flex;
+    column-gap: 95px;
+  }
+  &__content {
+    width: 445px;
+  }
+  &__title {
+    width: 445px;
+    margin-top: 180px;
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536b;
+  }
+  &__text {
+    width: 445px;
+    margin-top: 24px;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6c8294;
+  }
+  &__phones {
+    display: flex;
+  }
+  &__phone {
+    width: 300px;
+    height: 500px;
+  }
+}
+
+// responsive__part //
+
+// tablet__part
+@media (min-width: 768px) and (max-width: 1024px) {
+  .simple {
+    &__container {
+      width: 689px;
+      margin: 0 auto;
+    }
+    &__box {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &__content {
+      width: 573px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__title {
+      width: 573px;
+      margin-top: 0;
+      margin-bottom: 24px;
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      text-align: center;
+      letter-spacing: -0.369231px;
+      color: #36536b;
+    }
+    &__text {
+      width: 573px;
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      text-align: center;
+      color: #6c8294;
+    }
+  }
+}
+// phone__part
+@media (min-width: 320px) and (max-width: 480px) {
+  .simple {
+    margin-top: 80px;
+    &__container {
+      width: 328px;
+      margin: 0 auto;
+    }
+    &__box {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &__content {
+      width: 328px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__phone {
+      width: 180.91px;
+      height: 289.34px;
+    }
+    &__title {
+      margin-top: 0;
+      width: 328px;
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 36px;
+      text-align: center;
+      letter-spacing: -0.276923px;
+      color: #36536b;
+    }
+    &__text {
+      width: 328px;
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      text-align: center;
+      color: #6c8294;
+    }
+  }
+}
