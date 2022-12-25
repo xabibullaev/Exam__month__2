@@ -1,5 +1,13 @@
 .cooperate {
   background: $secondary__mirageblue;
+  &__circle {
+    z-index: 101;
+    position: absolute;
+    left: -80px;
+    top: 795px;
+    width: 780px;
+    height: 780px;
+  }
   &__box {
     display: flex;
     column-gap: 130px;
@@ -90,6 +98,14 @@
       mix-blend-mode: normal;
       opacity: 0.7;
     }
+    &__circle {
+      z-index: 101;
+      position: absolute;
+      left: 0;
+      top: 1080px;
+      width: 780px;
+      height: 780px;
+    }
   }
 }
 // phone__part
@@ -143,6 +159,14 @@
       color: #fbfcfe;
       mix-blend-mode: normal;
       opacity: 0.7;
+    }
+    &__circle {
+      z-index: 101;
+      position: absolute;
+      left: 0;
+      top: 835px;
+      width: 780px;
+      height: 780px;
     }
   }
 }

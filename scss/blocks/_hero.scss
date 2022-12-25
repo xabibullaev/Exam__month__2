@@ -1,4 +1,14 @@
 .hero {
+  z-index: 1000;
+  position: relative;
+  &__circle {
+    z-index: 101;
+    position: absolute;
+    left: 700px;
+    top: -600px;
+    width: 780px;
+    height: 780px;
+  }
   &__box {
     display: flex;
     column-gap: 180px;
@@ -100,6 +110,14 @@
       width: 355.77px;
       height: 599.32px;
     }
+    &__circle {
+      z-index: 101;
+      position: absolute;
+      left: -390px;
+      top: -900px;
+      width: 780px;
+      height: 780px;
+    }
   }
 }
 // phone__part
@@ -155,6 +173,14 @@
       margin-left: 0;
       bottom: -66px;
       width: 327px;
+    }
+    &__circle {
+      z-index: 101;
+      position: absolute;
+      left: -600px;
+      top: -1050px;
+      width: 780px;
+      height: 780px;
     }
   }
 }
