@@ -391,6 +391,7 @@ li {
   opacity: 1;
 }
 .header__button {
+  z-index: 1020;
   margin-left: 490px;
   padding: 15px 25px;
   background: #ba4270;
